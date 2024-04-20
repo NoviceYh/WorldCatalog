@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario anime</h1>
+    <form action="/guardar-serie" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
+
+        <!-- Si quieres permitir la edición de la fecha -->
+        <label for="fecha">Fecha de lanzamiento:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+
+        <label for="estudio">Estudio de animación:</label><br>
+        <input type="text" id="estudio" name="estudio"><br>
+
+        <label for="imagen_url">URL de la imagen:</label><br>
+        <input type="text" id="imagen_url" name="imagen_url"><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+
+</body>
+</html>
